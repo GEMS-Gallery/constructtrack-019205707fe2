@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Supplies Inventory</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Building Supplies Inventory</h1>
+        
+        <div id="inventory-list"></div>
+
+        <h2>Add New Item</h2>
+        <form id="add-item-form">
+            <input type="text" id="new-item-name" placeholder="Item Name" required>
+            <input type="number" id="new-item-quantity" placeholder="Quantity" required>
+            <input type="text" id="new-item-unit" placeholder="Unit" required>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <h2>Update Item</h2>
+        <form id="update-item-form">
+            <input type="number" id="update-item-id" placeholder="Item ID" required>
+            <input type="text" id="update-item-name" placeholder="New Name" required>
+            <input type="number" id="update-item-quantity" placeholder="New Quantity" required>
+            <input type="text" id="update-item-unit" placeholder="New Unit" required>
+            <button type="submit">Update Item</button>
+        </form>
+
+        <h2>Remove Item</h2>
+        <form id="remove-item-form">
+            <input type="number" id="remove-item-id" placeholder="Item ID" required>
+            <button type="submit">Remove Item</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

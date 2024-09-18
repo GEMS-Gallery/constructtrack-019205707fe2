@@ -1,0 +1,13 @@
+type SupplyItem = 
+ record {
+   id: nat;
+   name: text;
+   quantity: nat;
+   unit: text;
+ };
+service : {
+  addSupplyItem: (text, nat, text) -> (nat);
+  getInventory: () -> (vec SupplyItem) query;
+  removeSupplyItem: (nat) -> (bool);
+  updateSupplyItem: (nat, text, nat, text) -> (bool);
+}
